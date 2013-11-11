@@ -43,7 +43,7 @@ perl Makefile.PL INSTALLDIRS=vendor
 %makeinstall_std
 
 %files
-%doc README.PATCHING META.json META.yml LICENSE Changes README
+%doc  META.json META.yml LICENSE Changes README
 %{_mandir}/man3/*
 %{perl_vendorlib}/*
 
