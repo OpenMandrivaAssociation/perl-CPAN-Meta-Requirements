@@ -1,5 +1,5 @@
 %define upstream_name    CPAN-Meta-Requirements
-%define upstream_version 2.122
+%define upstream_version 2.125
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
@@ -9,7 +9,7 @@ Summary:	A set of version requirements for a CPAN dist
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/CPAN/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/CPAN/CPAN-Meta-Requirements-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Carp)
@@ -46,4 +46,5 @@ perl Makefile.PL INSTALLDIRS=vendor
 %doc README.PATCHING META.json META.yml LICENSE Changes README
 %{_mandir}/man3/*
 %{perl_vendorlib}/*
+
 
